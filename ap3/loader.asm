@@ -56,7 +56,7 @@ boot2:
 	lodsb
 	or al,al 
 	jz halt
-	or eax,0x0100
+	or eax,0x0400
 	mov word [ebx], ax
 	add ebx,2
 	jmp .loop
